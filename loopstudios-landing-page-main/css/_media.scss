@@ -1,0 +1,274 @@
+@media (min-width: 768px) {
+  header {
+    height: 100vh;
+    width: 100%;
+    background: url("../images/desktop/image-hero.jpg") center top no-repeat;
+    background-size: cover;
+    .navbar {
+      padding: 3.5rem 0;
+      .nav_wrap {
+        .burger {
+          display: none;
+        }
+        .logo {
+          width: 192px;
+        }
+        nav {
+          display: flex;
+          align-items: flex-end;
+          justify-content: start;
+          height: 25px;
+          width: 100%;
+          background: none;
+          transform: none;
+          position: relative;
+          .menu-logo {
+            display: none;
+          }
+          ul {
+            flex-direction: row;
+            li {
+              margin: 0 0.5em;
+              padding: 0 0.3em;
+              a {
+                text-transform: capitalize;
+              }
+            }
+          }
+        }
+      }
+    }
+    .title-wrapper {
+      .title {
+        font-size: 4.5em;
+        padding: 40px;
+      }
+    }
+  }
+  .interactive {
+    flex-direction: column;
+    overflow: hidden;
+    max-width: 1114px;
+    img {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .interactive__content {
+      padding: 4rem;
+      top: 320px;
+      h1 {
+        font-size: 3rem;
+      }
+    }
+  }
+  .creations {
+    .creations_wrap {
+      grid-template-columns: repeat(2, 1fr);
+
+      h1 {
+        justify-self: start;
+        order: 1;
+      }
+      button {
+        order: 2;
+        margin-right: 0;
+      }
+      .creations_gallery {
+        order: 3;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column: 1/-1;
+        ul {
+          display: none;
+        }
+        ol {
+          display: grid;
+          column-gap: 2rem;
+          row-gap: 2rem;
+          grid-template-columns: repeat(2, 1fr);
+          li {
+            display: block;
+            max-width: 256px;
+            height: 450px;
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+            // transform: scale(1);
+            font-size: 2rem;
+            position: relative;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+            h1 {
+              color: #fff;
+              position: absolute;
+              font-family: "Josefine Sans", sans-serif;
+              bottom: 0.6em;
+              left: 0.5em;
+              width: 90%;
+              text-align: left;
+            }
+            &::before {
+              content: "";
+              background-image: linear-gradient(
+                rgba(255, 255, 255, 0) 40%,
+                rgba(0, 0, 0, 0.6) 80%
+              );
+              width: 100%;
+              height: 100%;
+              top: 0;
+              left: 0;
+              position: absolute;
+            }
+            &:hover::before {
+              background-color: #ffffffc2;
+              background-image: none;
+            }
+            &:hover {
+              h1 {
+                color: #000;
+              }
+            }
+          }
+        }
+        .creations-subtitle {
+          width: 90%;
+        }
+      }
+    }
+  }
+  footer {
+    padding: 2.8em 0;
+    .footer-wrap {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 1.8rem;
+      .logo {
+        margin: 0;
+      }
+      nav {
+        margin: 0;
+        order: 2;
+        ul {
+          margin: 0;
+          justify-content: start;
+          order: 3;
+          flex-direction: row;
+          column-gap: 2rem;
+        }
+      }
+      .social {
+        margin-left: auto;
+        justify-content: end;
+      }
+      .copy {
+        margin: 0;
+        text-align: end;
+        order: 4;
+      }
+      .footer-attribution {
+        grid-column: 1/-1;
+        order: 5;
+      }
+    }
+  }
+}
+@media (min-width: 1080px) {
+  .interactive {
+    flex-direction: row;
+    overflow: hidden;
+    max-width: 1114px;
+    img {
+      width: 70%;
+      margin-left: 0;
+    }
+    .interactive__content {
+      padding: 6rem;
+      position: absolute;
+      right: -3rem;
+      top: 280px;
+      h1 {
+        font-size: 3rem;
+        text-align: left;
+      }
+      p {
+        text-align: left;
+      }
+    }
+  }
+  .creations {
+    .creations_wrap {
+      grid-template-columns: repeat(2, 1fr);
+
+      h1 {
+        justify-self: start;
+        order: 1;
+      }
+      button {
+        order: 2;
+        margin-right: 0;
+      }
+      .creations_gallery {
+        order: 3;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column: 1/-1;
+        ul {
+          display: none;
+        }
+        ol {
+          display: grid;
+          column-gap: 2rem;
+          row-gap: 2rem;
+          grid-template-columns: repeat(4, 1fr);
+          li {
+            display: block;
+            max-width: 256px;
+            height: 450px;
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+            // transform: scale(1);
+            font-size: 2rem;
+            position: relative;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+            h1 {
+              color: #fff;
+              position: absolute;
+              font-family: "Josefine Sans", sans-serif;
+              bottom: 0.6em;
+              left: 0.5em;
+              width: 90%;
+              text-align: left;
+            }
+            &::before {
+              content: "";
+              background-image: linear-gradient(
+                rgba(255, 255, 255, 0) 40%,
+                rgba(0, 0, 0, 0.6) 80%
+              );
+              width: 100%;
+              height: 100%;
+              top: 0;
+              left: 0;
+              position: absolute;
+            }
+            &:hover::before {
+              background-color: #ffffffc2;
+              background-image: none;
+            }
+            &:hover {
+              h1 {
+                color: #000;
+              }
+            }
+          }
+        }
+        .creations-subtitle {
+          width: 90%;
+        }
+      }
+    }
+  }
+}
